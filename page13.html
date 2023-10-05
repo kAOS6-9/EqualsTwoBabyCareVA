@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Equals Two</title>
+<link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+<link href="css/animate.css" rel="stylesheet" type="text/css">
+<link href="css/auto_animate.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<div id="wrapper">
+    
+<div id="page07"><img src="images/page07.png" alt=""/></div>
+<div id="page07_copy01"><img src="images/page07_copy01.png" alt=""/></div>
+<div id="page07_copy02"><img src="images/page07_copy02.png" alt=""/></div>
+<div id="page07_copy03"><img src="images/page07_copy03.png" alt=""/></div>
+    
+<div id="page12_copy04"><img src="images/page12_copy04.png" alt=""/></div>
+<div id="page07_copy05"><img src="images/page07_copy05.png" alt=""/></div>
+<div id="page07_copy06"><img src="images/page07_copy06.png" alt=""/></div>
+<div id="page07_copy07"><img src="images/page07_copy07.png" alt=""/></div>
+<div id="page07_copy09"><img src="images/page07_copy09.png" alt=""/></div>
+    
+<a href="page12.html"><div id="page08_copy10"><img src="images/page13_copy10.png" alt=""/></div></a>
+    
+<div id="page08_copy11"><img src="images/page13_copy11.png" alt=""/></div>
+
+<!--<div id="page07_copy12"><img src="images/page13_copy12.png" alt=""/></div>-->
+    
+<div id="page08_copy13" onClick="question01()"><img src="images/page08_copy13.png" alt=""/></div>
+    
+<div id="page08_copy14" onClick="question02()"><img src="images/page08_copy14.png" alt=""/></div>
+    
+<div id="page08_copy15" onClick="question03()"><img src="images/page08_copy15.png" alt=""/></div>
+    
+<div id="page08_copy16"><img src="images/page08_copy16.png" alt=""/></div>
+    
+<div id="page08_copy17"><img src="images/page08_copy17.png" alt=""/></div>
+    
+<div id="page08_copy18"><img src="images/page08_copy18.png" alt=""/></div>
+    
+<div id="page07_copy08"><img src="images/page07_copy08.png" alt=""/></div>
+    
+<div id="page07_copy20"><img src="images/page07_copy20.png" alt=""/></div>
+    
+<!--<a href="page12.html"><div id="page07_copy22"></div></a>
+<a href="page13.html"><div id="page07_copy23"></div></a>
+<a href="page09.html"><div id="page07_copy24"></div></a>-->
+
+    
+</div>
+    
+
+    
+<script>
+	var value = parseInt(window.location.search.substring(1));
+    
+function question01()
+{
+document.getElementById("page08_copy16").style.display="block";
+    
+setTimeout(function () {
+document.getElementById("page08_copy16").style.opacity="1";
+document.getElementById("page08_copy17").style.opacity="0";
+document.getElementById("page08_copy18").style.opacity="0";
+}, 100);
+
+setTimeout(function () {
+window.location.href = "page14.html?"+(value+1);
+document.getElementById("page08_copy17").style.display="none";
+document.getElementById("page08_copy18").style.display="none";
+}, 600);
+}
+	
+function question02()
+{
+document.getElementById("page08_copy17").style.display="block";
+    
+setTimeout(function () {
+document.getElementById("page08_copy17").style.opacity="1";
+document.getElementById("page08_copy16").style.opacity="0";
+document.getElementById("page08_copy18").style.opacity="0";
+}, 100);
+    
+setTimeout(function () {
+window.location.href = "page14.html?"+(value+2);;
+document.getElementById("page08_copy16").style.display="none";
+document.getElementById("page08_copy18").style.display="none";
+}, 600);
+}
+	
+function question03()
+{
+document.getElementById("page08_copy18").style.display="block";
+    
+setTimeout(function () {
+document.getElementById("page08_copy18").style.opacity="1";
+document.getElementById("page08_copy17").style.opacity="0";
+document.getElementById("page08_copy16").style.opacity="0";
+}, 100);
+    
+setTimeout(function () {
+window.location.href = "page14.html?"+(value+3);;
+document.getElementById("page08_copy17").style.display="none";
+document.getElementById("page08_copy16").style.display="none";
+}, 600);
+}
+    
+</script>
+    
+
+
+</body>
+</html>
